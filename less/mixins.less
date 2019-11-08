@@ -1,1 +1,27 @@
 // Mixins Here
+
+
+.custom-btn (@br: 5px, @color: white, @bg: @ebony-clay, @pad: 6px 3px, @wid){
+  border-radius: @br;
+  color: @color;
+  background: @bg;
+  padding: @pad;
+  width: @wid
+}
+
+
+.my-hover-mixin() {
+  &:hover {
+    background: @wild-sand;
+          color: @ebony-clay;
+  }
+}
+
+@phone: ~'(max-width: 500px)';    
+
+// // to call it   @media @phone {
+//     flex-direction: column;
+//     align-items: center;
+//   }
+
+
